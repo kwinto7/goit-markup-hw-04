@@ -116,9 +116,17 @@ gap: 40px;
 /* ------------------main page------------------ */
 
 .main-page {
+    max-width: 1440px;
+    margin: 0 auto;
     background-color: #2e2f42;
     text-align: center;
     padding: 188px 0;
+    background-image: linear-gradient(to bottom,
+         rgba(46, 47, 66, 0.7),
+         rgba(46, 47, 66, 0.7)),
+        url(../images/people-office-opt.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .main-page-title {
@@ -185,6 +193,23 @@ gap: 40px;
     width: calc((100% - 24px * 3) / 4);
 }
 
+.icon-container {
+    max-width: 100%;
+    height: 112px;
+    background-color: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.feature-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .feature-title {
     font-weight: 500;
     font-size: 20px;
@@ -231,7 +256,7 @@ gap: 40px;
 }
 
 .employee-container {
-    padding: 32px 0;
+    padding: 32px 16px;
 }
 
 .employee-name {
@@ -251,6 +276,27 @@ gap: 40px;
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
+    margin-bottom: 8px;
+}
+
+.soc-links-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.soc-link-item {
+    background-color: #4d5ae5;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    position: relative;
+}
+
+.soc-link-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 /* ------------------our team------------------ */
 /* ------------------our portfolio------------------ */
@@ -311,6 +357,11 @@ gap: 40px;
     background: #2e2f42;
 }
 
+.footer .container {
+    display: flex;
+    gap: 120px;
+}
+
 .footer .logo {
     display: inline-block;
     color: #fff;
@@ -324,4 +375,24 @@ gap: 40px;
     color: #f4f4fd;
     max-width: 264px;
 }
+
+.soc-link-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.soc-links-block {
+    width: 208px;
+}
+
+.footer .soc-link-icon {
+    width: 24px;
+    height: 24px;
+}
+
+
 /* ------------------footer------------------ */
