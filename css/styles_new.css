@@ -76,12 +76,23 @@ img {
     display: inline-block;
     padding-top: 24px;
     padding-bottom: 24px;
+    position: relative;
 }
 
 .nav-link:hover {
     color:#404bbf;
 }
 
+.nav-link:active::after {
+    position: absolute;
+    top: 68px;
+    content: "";
+    display: block;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    background-color: #404bbf;
+}
 
 .nav-link-studio:active {
     color: #404bbf;
@@ -255,6 +266,11 @@ gap: 40px;
     width: calc((100% - 24px * 3) / 4);
 }
 
+.our-team-list-item:hover .soc-link-item,
+.our-team-list-item:focus .soc-link-item {
+    background-color: #404bbf;
+}
+
 .employee-container {
     padding: 32px 16px;
 }
@@ -290,6 +306,17 @@ gap: 40px;
     height: 40px;
     border-radius: 40px;
     position: relative;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4,
+        0,
+        0.2,
+        1);
+}
+
+.soc-link-item:hover,
+.soc-link-item:focus {
+    background-color: #31d0aa;
 }
 
 .soc-link-icon {
@@ -325,7 +352,53 @@ gap: 40px;
 
 .portfolio-list-item {
     width: calc((100% - 24px * 2) / 3);
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4,
+        0,
+        0.2,
+        1);
+    overflow: hidden;
 }
+
+.img-ovl-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    background-color: #4d5ae5;
+    padding: 40px 32px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+}
+
+.overlay-text {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+}
+
+.portfolio-list-item:hover,
+.portfolio-list-item:focus       {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+     0 1px 1px 0 rgba(46, 47, 66, 0.16),
+      0 1px 6px 0 rgba(46, 47, 66, 0.08);
+      cursor: pointer;
+    }
+
+.portfolio-list-item:hover .overlay {
+    transform: translateY(0);
+}
+
 
 .portfolio-item-container {
     border-bottom: 1px solid #e7e9fc;
