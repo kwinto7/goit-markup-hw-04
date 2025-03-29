@@ -87,8 +87,10 @@ img {
     color:#404bbf;
 }
 
-.nav-link:active::after {
+/* .nav-link:active::after { */
+.nav-link::after {
     position: absolute;
+    left: 0;
     top: 68px;
     content: '';
     display: block;
