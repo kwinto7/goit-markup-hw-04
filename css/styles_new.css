@@ -29,16 +29,13 @@ img {
 }
 
 .nav-link,
-.contact-item,
 .main-page-button,
 .soc-link,
 .portfolio-list-item,
 .overlay {
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4,
-        0,
-        0.2,
-        1);
+    transition-timing-function:
+        cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ------------------header------------------ */
@@ -128,6 +125,9 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
     transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: 
+        cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-item:hover,
