@@ -32,7 +32,8 @@ img {
 .contact,
 .main-page-button,
 .soc-link,
-.portfolio-list-item {
+.portfolio-list-item,
+.overlay {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4,
         0,
@@ -379,8 +380,6 @@ img {
     left: 0;
     transform: translateY(100%);
     transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: ease-in-out;
 }
 
 .portfolio-list-item:hover,
