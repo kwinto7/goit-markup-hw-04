@@ -500,5 +500,9 @@ gap: 40px;
     height: 24px;
 }
 
+.footer .soc-link:hover,
+.footer .soc-link:focus {
+    background-color: #31d0aa;
+
 
 /* ------------------footer------------------ */
