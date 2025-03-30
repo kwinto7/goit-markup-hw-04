@@ -28,6 +28,18 @@ img {
     margin: 0 auto;
 }
 
+.nav-link,
+.contacts-item,
+.main-page-button,
+.soc-link,
+.portfolio-list-item {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4,
+        0,
+        0.2,
+        1);
+}
+
 /* ------------------header------------------ */
 
 .header {
@@ -63,7 +75,7 @@ img {
 }
 
 .logo span {
-    color: #4d5ae5;
+    color: #404bbf;
 }
 
 .menu {
@@ -83,11 +95,6 @@ img {
     padding-bottom: 24px;
     position: relative;
     transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4,
-        0,
-        0.2,
-        1);
 }
 
 .nav-link:hover,
@@ -99,7 +106,7 @@ img {
 .nav-link::after {
     position: absolute;
     left: 0;
-    top: 68px;
+    bottom: -1px;
     content: '';
     display: block;
     border-radius: 2px;
@@ -109,26 +116,21 @@ img {
 }
 
 .contacts-list {
-display: flex;
-gap: 40px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
 }
 
-.contacts-item-mail,
-.contacts-item-phone {
+.contacts-item {
     display: inline-block;
-    padding-top          : 24px;
-    padding-bottom: 24px;
-}
-
-.contacts-item-mail,
-.contacts-item-phone {
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #434455;
+    transition-property: color;
 }
 
-.contacts-item-mail:hover,
-.contacts-item-phone:hover {
+.contacts-item:hover,
+.contacts-item:focus {
     color: #404bbf;
 }
 /* ------------------header------------------ */
@@ -182,11 +184,6 @@ gap: 40px;
     margin-top: 48px;
     cursor: pointer;
     transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4,
-        0,
-        0.2,
-        1);
 }
 
 .main-page-button:hover {
@@ -277,11 +274,6 @@ gap: 40px;
     width: calc((100% - 24px * 3) / 4);
 }
 
-/* .our-team-list-item:hover .soc-link,
-.our-team-list-item:focus .soc-link {
-    background-color: #404bbf;
-} */
-
 .employee-container {
     padding: 32px 0;
 }
@@ -330,11 +322,6 @@ gap: 40px;
     justify-content: center;
     align-items: center;
     transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4,
-        0,
-        0.2,
-        1);
 }
 
 
@@ -370,11 +357,6 @@ gap: 40px;
 .portfolio-list-item {
     width: calc((100% - 24px * 2) / 3);
     transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4,
-        0,
-        0.2,
-        1);
     overflow: hidden;
 }
 
