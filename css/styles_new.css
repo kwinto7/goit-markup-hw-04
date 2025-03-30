@@ -29,7 +29,7 @@ img {
 }
 
 .nav-link,
-.contact,
+.contact-item,
 .main-page-button,
 .soc-link,
 .portfolio-list-item,
@@ -123,16 +123,15 @@ img {
     align-items: center;
 }
 
-.contact {
-    display: inline-block;
+.contact-item {
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #434455;
     transition-property: color;
 }
 
-.contact:hover,
-.contact:focus {
+.contact-item:hover,
+.contact-item:focus {
     color: #404bbf;
 }
 /* ------------------header------------------ */
