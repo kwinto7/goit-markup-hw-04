@@ -28,15 +28,6 @@ img {
     margin: 0 auto;
 }
 
-.main-page-button,
-.soc-link,
-.portfolio-list-item,
-.overlay {
-    transition-duration: 250ms;
-    transition-timing-function:
-        cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 /* ------------------header------------------ */
 
 .header {
@@ -182,7 +173,7 @@ img {
     margin: 0 auto;
     margin-top: 48px;
     cursor: pointer;
-    transition-property: background-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-page-button:hover {
@@ -320,7 +311,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition-property: background-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -355,7 +346,7 @@ img {
 
 .portfolio-list-item {
     width: calc((100% - 24px * 2) / 3);
-    transition-property: box-shadow;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
 }
 
@@ -377,7 +368,7 @@ img {
     top: 0;
     left: 0;
     transform: translateY(100%);
-    transition-property: transform;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item:hover,
