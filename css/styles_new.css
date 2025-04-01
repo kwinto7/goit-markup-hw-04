@@ -86,8 +86,7 @@ img {
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
-    /* color: #2e2f42; */
-    color: #404bbf;
+    color: #2e2f42;
     text-transform: capitalize;
     display: inline-block;
     padding-top: 24px;
@@ -101,8 +100,12 @@ img {
     color:#404bbf;
 }
 
+.current {
+    color: #404bbf; 
+}
+
 /* .nav-link:active::after { */
-.nav-link::after {
+.current::after {
     position: absolute;
     left: 0;
     bottom: -1px;
