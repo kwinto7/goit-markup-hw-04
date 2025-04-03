@@ -106,6 +106,10 @@ img {
     background-color: #404bbf;
 }
 
+.contacts {
+    display: flex;
+}
+
 .contacts-list {
     display: flex;
     gap: 40px;
